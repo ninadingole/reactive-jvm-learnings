@@ -7,7 +7,7 @@ import reactor.core.Disposable;
 
 import java.util.function.Consumer;
 
-public class MyFlux<T> implements Publisher<T> {
+public abstract class MyFlux<T> implements Publisher<T> {
 
 
     public static MyFlux<Integer> range(int start, int end) {
