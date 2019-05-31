@@ -57,6 +57,7 @@ public class MyFlux<T> implements Publisher<T> {
 
         @Override
         public void dispose() {
+            System.out.println("Dispose called");
             s.cancel();
         }
     }
